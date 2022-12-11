@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: lorenzolewis/github-script-test/.github/actions/create-or-update-branch@main
+      - uses: lorenzolewis/github-script-test/.github/create-or-update-branch@main
