@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Create timestamp file
+        # This is done so that there is always a change in the PR so a re-deploy is triggered
+        run: date > timestamp.txt
       - uses: lorenzolewis/github-script-test/create-or-update-branch@main
         with:
           branch-name: 'i18n-preview'
