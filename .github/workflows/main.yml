@@ -11,3 +11,7 @@ jobs:
       - uses: lorenzolewis/github-script-test/create-or-update-branch@main
         with:
           branch-name: i18n-preview
+      - uses: lorenzolewis/github-script-test/create-pull-request@main
+        with:
+          head: i18n-preview
+          base: main
